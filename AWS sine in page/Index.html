@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Page Template</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 40%;
+        left: 50%;
+    }
+
+    .radio1 {
+
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        border: 2px solid #38d;
+        border-radius: 5px;
+        display: flex;
+        height: 5em;
+        align-items: center;
+        margin: 1em;
+        width: 20em;
+        padding: auto;
+        background-color: initial;
+        cursor: default;
+        background-color: #f0f9ff;
+
+    }
+    .radio2 {
+
+font-family: 'Poppins', sans-serif;
+font-size: 18px;
+border: 2px solid#bbbcbc;
+border-radius: 5px;
+display: flex;
+height: 5em;
+align-items: center;
+margin: 1em;
+width: 20em;
+padding: auto;
+background-color: initial;
+cursor: default;
+
+
+}
+
+    .column {
+  float: left;
+  padding: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.form-control{
+    width: 77%;
+    padding: 8px 22px;
+    border-radius: 6px;
+    margin: 1em;
+    
+}
+
+.btn{
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 6px;
+    background:#025fe0;
+    transition: all 0.2s ease;
+    width: 89%;
+    margin: 1em;
+}
+.btn1{
+    color: #0a0707;
+    padding: 8px 22px;
+    border-radius: 6px;
+    background:#edeeef;
+    transition: all 0.2s ease;
+    width: 89%;
+    margin: 1em;
+}
+
+</style>
+
+<body>
+    <div class="container"><br><br><br><br>
+        <h1><i>Welcome AWS Sine In Page</i></h1>
+        
+        <h1 style=" margin: 1em;">Sine In</h1>
+        <div class="radio1">
+            <div class="row">
+                <div class="column">
+                    <input type="radio" name="uses" value="Root User" id="rootUser">
+                    <label for="rootUser"><b>Root User</b></label>
+                </div>
+                <div style=" font-size: 12px; font-family: Helvetica Neue,Roboto,Arial,sans-serif; margin-left: 0.75cm;" class="column">
+                    <p>Account owner that performs tasks requiring unrestricted access. <a href="">Learn more</a></p>
+
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-sm"></div>
+                <div style=" font-size: 12px; font-family: Helvetica Neue,Roboto,Arial,sans-serif;" class="col-sm">
+                    <p>Account owner that performs tasks requiring unrestricted access. <a>Learn more</a></p>
+
+                </div>
+            </div> -->
+        </div>
+
+        <div class="radio2">
+            <div class="row">
+                <div class="column">
+                    <input type="radio" name="uses" value="Root User" id="rootUser">
+                    <label for="rootUser"><b>IAM User</b></label>
+                </div>
+                <div style=" font-size: 12px; font-family: Helvetica Neue,Roboto,Arial,sans-serif; margin-left: 0.75cm;" class="column">
+                    <p>User within an account that performs daily tasks. <a href="">Learn more</a></p>
+
+                </div>
+            </div>
+        </div>
+   
+    
+    <div class="normal-text">
+        <label style=" font-size: 18px; margin: 1em;"><b>Root User Email Address</b></label><br>
+        <input type="text" id="name" placeholder="username@example.com"  class="form-control" required>
+    </div>
+    
+
+    <input type="button" class="btn" value="NEXT">
+
+     <div style=" font-size: 12px; font-family: Helvetica Neue,Roboto,Arial,sans-serif; margin: 1em;">
+    <p>By continuing, you agree to the <a href=""> AWS Customer Agreement </a> <br>
+        or other agreement for AWS services, and the<br>
+        <a href="">Privacy Notice</a>. This site uses essential cookies. See our<br> <a href="">Cookie Notice</a> for more information</p>
+        </div>
+    <p style=" margin: 1em; color:#747475;">________________New TO AWS?________________</p>
+
+    <input type="button" class="btn1" value="Creacte a new AWS account">
+    </div>
+</body>
+
+</html>
